@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{7CAFE8C4-07EF-40FA-A42F-81E9E4D28CF6}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		LICENSE.md = LICENSE.md
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Escc.Exceptions.Soap", "Escc.Exceptions.Soap\Escc.Exceptions.Soap.csproj", "{5A8EA0FB-D8FC-4003-B499-C6ECDB956905}"
+EndProject
+Project("{E09DD79A-4488-4AB9-8D3F-A7EEE78BF432}") = "Escc.Exceptions.Soap.NuGet", "Escc.Exceptions.Soap.NuGet\Escc.Exceptions.Soap.NuGet.nuproj", "{23ED48EF-8AFB-432C-B5E5-FD3710753FE7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5A8EA0FB-D8FC-4003-B499-C6ECDB956905}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A8EA0FB-D8FC-4003-B499-C6ECDB956905}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A8EA0FB-D8FC-4003-B499-C6ECDB956905}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A8EA0FB-D8FC-4003-B499-C6ECDB956905}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23ED48EF-8AFB-432C-B5E5-FD3710753FE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23ED48EF-8AFB-432C-B5E5-FD3710753FE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23ED48EF-8AFB-432C-B5E5-FD3710753FE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23ED48EF-8AFB-432C-B5E5-FD3710753FE7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

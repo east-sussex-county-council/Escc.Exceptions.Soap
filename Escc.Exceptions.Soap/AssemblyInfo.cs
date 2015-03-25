@@ -1,18 +1,20 @@
+using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Security;
+using System.Resources;
 
 //
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 //
-[assembly: AssemblyTitle("EsccWebTeam.Exceptions.Soap")]
+[assembly: AssemblyTitle("Escc.Exceptions.Soap")]
 [assembly: AssemblyDescription("Library for handing errors from SOAP web services")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("East Sussex County Council")]
-[assembly: AssemblyProduct("EsccWebTeam.Exceptions.Soap")]
+[assembly: AssemblyProduct("Escc.Exceptions.Soap")]
 [assembly: AssemblyCopyright("East Sussex County Council")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]		
@@ -57,5 +59,6 @@ using System.Security;
 //
 [assembly: AssemblyDelaySign(false)]
 [assembly: ComVisibleAttribute(false)]
-
+[assembly: CLSCompliant(true)]
 [assembly: AllowPartiallyTrustedCallers]
+[assembly: NeutralResourcesLanguageAttribute("en-GB")]

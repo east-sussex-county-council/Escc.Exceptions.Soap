@@ -1,10 +1,14 @@
 using System;
 using System.Web.Services.Protocols;
 using System.Xml;
+using System.Xml.XPath;
 
-namespace EsccWebTeam.Exceptions.Soap
+namespace Escc.Exceptions.Soap
 {
-    public class SoapExceptionEngine
+    /// <summary>
+    /// Creates <see cref="SoapException"/> instances from ordinary exceptions
+    /// </summary>
+    public static class SoapExceptionEngine
     {
         /// <param name="message">The error message.</param>	
         /// <param name="description">A description of the error message.</param>
@@ -38,8 +42,7 @@ namespace EsccWebTeam.Exceptions.Soap
                 }
             }
 
-            //Create the SoapException
-            SoapException soapexception = new SoapException(message, SoapException.ServerFaultCode, actor, mainnode, innerException);
+            var soapexception = new SoapException(message, SoapException.ServerFaultCode, actor, mainnode, innerException);
 
             return soapexception;
         }
@@ -48,8 +51,10 @@ namespace EsccWebTeam.Exceptions.Soap
         /// <param name="description">A description of the error message.</param>		
         /// <seealso cref="XmlNode">
         /// </seealso>			
-        public static XmlNode GetDetailNode(XmlDocument doc, string message, string description)
+        private static XmlNode GetDetailNode(XmlDocument doc, string message, string description)
         {
+            if (doc == null) throw new ArgumentNullException("doc");
+
             XmlNode detailNode =
                 doc.CreateNode(XmlNodeType.Element,
                 SoapException.DetailElementName.Name,
